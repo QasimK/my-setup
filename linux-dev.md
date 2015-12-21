@@ -43,4 +43,5 @@ Copy the public key to the clipboard
 
 ## Setup a Virtualenv using Python 3...
 
+    mkproject --python=`which python3` project-name
 
