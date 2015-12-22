@@ -4,18 +4,17 @@
 
 ```
 {
-	"atomic_save": true,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
-	"font_size": 12,
-	"rulers":
-	[
-		100
-	],
-	"shift_tab_unindent": true,
-	"show_encoding": true,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"ensure_newline_at_eof_on_save": true,
+    "atomic_save": true,
+    "font_size": 12,
+    "rulers":
+    [
+        100
+    ],
+    "shift_tab_unindent": true,
+    "show_encoding": true,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
 }
 ```
 
