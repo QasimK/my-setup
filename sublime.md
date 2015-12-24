@@ -6,10 +6,7 @@
 {
     "atomic_save": true,
     "font_size": 12,
-    "rulers":
-    [
-        100
-    ],
+    "rulers": [80, 100],
     "shift_tab_unindent": true,
     "show_encoding": true,
     "translate_tabs_to_spaces": true,
