@@ -41,7 +41,7 @@ Copy the public key to the clipboard
     xclip -selection clipboard ~/.ssh/id_rsa.pub
 
 
-## Setup a Virtualenv using Python 3...
+## Setup a Virtualenv using Python 3
 
     mkproject --python=`which python3` project-name
 
