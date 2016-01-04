@@ -29,7 +29,6 @@
 - Djaneiro
 - Git
 - GitGutter?
-- Gitignored File Excluder
 - jQuery?
 - JsFormat
 - LineEndings
