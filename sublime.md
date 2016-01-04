@@ -12,9 +12,13 @@
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "ensure_newline_at_eof_on_save": true,
-	"folder_exclude_patterns": [
-		"node_modules"
-	],
+    "folder_exclude_patterns": [
+        "node_modules",
+        "htmlcov",
+        ".git",
+        ".codeintel",
+        ".cache"
+    ],
 }
 ```
 
