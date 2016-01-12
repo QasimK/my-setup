@@ -27,11 +27,11 @@
 [Package Control](https://packagecontrol.io/installation):
 
 - Sass
+- SassBeautify (Requires Sass which requires Ruby)
 - BracketHighlighter
 - Djaneiro
 - JsFormat
 - LineEndings
-- SassBeautify
 - SublimeLinter
 
 - Git?
