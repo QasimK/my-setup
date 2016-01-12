@@ -24,17 +24,19 @@
 
 ## Packages
 
-- Package Control
+[Package Control](https://packagecontrol.io/installation):
+
+- Sass
 - BracketHighlighter
 - Djaneiro
-- Git
-- GitGutter?
-- jQuery?
 - JsFormat
 - LineEndings
-- Sass
 - SassBeautify
 - SublimeLinter
-- SublimeLinter-jshint
-- SublimeLinter-pylint
+
+- Git?
+- SublimeLinter-jshint?
+- SublimeLinter-pylint?
 - DocBlockr?
+- GitGutter?
+- jQuery?
