@@ -33,6 +33,7 @@
 - JsFormat
 - LineEndings
 - SublimeLinter
+- babel-sublime
 
 - Git?
 - SublimeLinter-jshint?
