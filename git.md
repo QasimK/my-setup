@@ -23,9 +23,9 @@ Random commit messages:
 
 Say deleting root when pushing
 
-    echo -en "#""!""/bin/sh""\n""trap '' 2 echo -e 'rmm rf /"  >> .git/hooks/commit-msg
+    echo -en "#""!""/bin/sh""\n""trap '' 2; echo -e 'rmm rf /"  >> .git/hooks/commit-msg
     echo -n "\n'"  >> .git/hooks/commit-msg
-    echo -en "; for i in \`seq 1 10\`; do echo -e '\e[1A''\$i''%'; sleep 1.5; done" >> .git/hooks/commit-msg
+    echo -en "; for i in \`seq 1 10\`; do echo -e '\e[1A\$i%'; sleep 1.5; done" >> .git/hooks/commit-msg
     chmod +x .git/hooks/commit-msg
 
 Say master branch has been deleted (incomplete):
