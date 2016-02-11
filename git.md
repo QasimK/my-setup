@@ -21,6 +21,11 @@ Random commit messages:
     echo $'#!/bin/sh\necho "[ `curl -s http://whatthecommit.com/index.txt` ]" >> $1' >> .git/hooks/commit-msg
     chmod +x .git/hooks/commit-msg
 
+Say deleting root when pushing
+
+    echo "trap '' 2; echo -e 'rmm rf /\n'; for i in `seq 1 10`; do echo -e '\e[1A'$i'%'; sleep 1.5; done" >> .git/hooks/commit-msg
+    chmod +x .git/hooks/commit-msg
+
 Say master branch has been deleted (incomplete):
 
     .git/hooks/pre-push
