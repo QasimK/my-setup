@@ -13,3 +13,8 @@
     git config --global user.name QasimK
     git config --global push.default simple
 
+
+## Prank
+
+    echo $'#!/bin/sh\necho "[ `curl -s http://whatthecommit.com/index.txt` ]" >> $1' >> .git/hooks/commit-msg
+    chmod +x .git/hooks/commit-msg
