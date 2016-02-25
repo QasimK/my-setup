@@ -31,6 +31,12 @@ Make the commands available
     source ~/.bashrc
 
 
+## Bash shortcuts
+
+    echo "alias rmpycache='find . -name \*.pyc -delete && find . -type d -name __pycache__ -delete'" >> ~/.bashrc
+    source ~/.bashrc
+
+
 ## Create SSH key to use locally (with GitHub)
 <https://help.github.com/articles/generating-ssh-keys/>
 
