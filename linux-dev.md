@@ -6,7 +6,7 @@
     echo "export EDITOR="$VISUAL"" >> ~/.bashrc
     source ~/.bashrc
 
-## Better Bash prompt
+## Better Git integration with Bash
 
 [See this repo](https://github.com/twolfson/sexy-bash-prompt), or in one line:
 
