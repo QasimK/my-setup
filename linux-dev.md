@@ -6,6 +6,12 @@
     echo "export EDITOR="$VISUAL"" >> ~/.bashrc
     source ~/.bashrc
 
+## Better Bash prompt
+
+[See this repo](https://github.com/twolfson/sexy-bash-prompt), or in one line:
+
+    (cd /tmp && git clone --depth 1 https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
+
 
 ## Install PIP for the local user
 <https://pip.pypa.io/en/stable/user_guide/>
