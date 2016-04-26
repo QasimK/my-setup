@@ -26,6 +26,8 @@
 
 [Package Control](https://packagecontrol.io/installation):
 
+**General**
+
 - BracketHighlighter
 - SideBarEnhancements
 - LineEndings
@@ -33,8 +35,12 @@
 - Git
 - GitGutter
 
+**Python**
+
 - SublimeLinter-pylint
 - Djaneiro
+
+**Web**
 
 - SublimeLinter-jshint?
 - JsFormat
