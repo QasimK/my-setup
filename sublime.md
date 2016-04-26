@@ -26,18 +26,20 @@
 
 [Package Control](https://packagecontrol.io/installation):
 
-- Sass
-- SassBeautify (Requires Sass which requires Ruby)
 - BracketHighlighter
-- Djaneiro
-- JsFormat
+- SideBarEnhancements
 - LineEndings
 - SublimeLinter
-- babel-sublime
+- Git
+- GitGutter
 
-- Git?
+- SublimeLinter-pylint
+- Djaneiro
+
 - SublimeLinter-jshint?
-- SublimeLinter-pylint?
-- DocBlockr?
-- GitGutter?
-- jQuery?
+- JsFormat
+- DocBlockr
+- jQuery
+- Sass
+- SassBeautify (Requires Sass which requires Ruby)
+- babel-sublime
