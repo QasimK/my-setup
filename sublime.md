@@ -19,6 +19,10 @@
         ".codeintel",
         ".cache"
     ],
+	"binary_file_patterns":
+	[
+		".codeintel/*",
+	]
 }
 ```
 
