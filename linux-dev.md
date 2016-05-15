@@ -3,7 +3,7 @@
 ## Use Vim with Bash
 
     echo "export VISUAL=vim" >> ~/.bashrc
-    echo "export EDITOR="$VISUAL"" >> ~/.bashrc
+    echo "export EDITOR=vim" >> ~/.bashrc
     source ~/.bashrc
 
 ## Better Git integration with Bash
