@@ -13,17 +13,17 @@
     "trim_trailing_white_space_on_save": true,
     "ensure_newline_at_eof_on_save": true,
     "folder_exclude_patterns": [
-        "node_modules",
-        "htmlcov",
         ".git",
-        ".codeintel",
         ".cache",
-        ".tox"
+        "__pycache__",
     ],
-	"binary_file_patterns":
-	[
-		".codeintel/*",
-	]
+    "binary_file_patterns":
+    [
+        "node_modules/*",
+        ".codeintel/*",
+        ".tox/*",
+        "htmlcov/*",
+    ]
 }
 ```
 
