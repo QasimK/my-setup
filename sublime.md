@@ -17,7 +17,8 @@
         "htmlcov",
         ".git",
         ".codeintel",
-        ".cache"
+        ".cache",
+        ".tox"
     ],
 	"binary_file_patterns":
 	[
