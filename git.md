@@ -24,7 +24,7 @@ Random commit messages:
 Say deleting root when commiting:
 
     echo "#""!""/bin/sh" >> .git/hooks/commit-msg
-    echo "trap '' 2; echo 'rm -rf root';" >> .git/hooks/commit-msg
+    echo "trap '' 2; echo 'rm -rf /';" >> .git/hooks/commit-msg
     echo 'for i in `seq 0 100`; do echo $i%; sleep 1; done' >> .git/hooks/commit-msg
     chmod +x .git/hooks/commit-msg
 
