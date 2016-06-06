@@ -42,7 +42,7 @@
 
 **Python**
 
-- SublimeLinter-pylint
+- Anaconda
 - Djaneiro
 
 **Web**
