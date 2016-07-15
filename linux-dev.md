@@ -57,3 +57,9 @@ Copy the public key to the clipboard
 
     mkproject --python=`which python3` project-name
 
+## Setup Jupyter Notebook with Virtualenv
+
+(Assuming Jupyter is installed outside of the virtualenv)
+
+    pip install ipykernel
+    python -m ipykernel install --user --name project-name --display-name "Project Name"
