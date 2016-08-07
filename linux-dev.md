@@ -6,6 +6,7 @@
     echo "export EDITOR=vim" >> ~/.bashrc
     source ~/.bashrc
 
+
 ## Better Git integration with Bash
 
 <https://github.com/twolfson/sexy-bash-prompt>
@@ -53,9 +54,22 @@ Copy the public key to the clipboard
     xclip -selection clipboard ~/.ssh/id_rsa.pub
 
 
+## Setup shortcut to launch Terminator instead of Terminal
+
+    Keyboard Shortcuts > New custom command "terminator" with the right shortcut
+
+
+## Setup up SSH to keep connections alive
+
+    echo "Host *" >> ~/.ssh/config
+    echo "    ServerAliveInterval 240" >> ~/.ssh.config
+    chmod 600 ~/.ssh/config
+
+
 ## Setup a Virtualenv using Python 3
 
     mkproject --python=`which python3` project-name
+
 
 ## Setup Jupyter Notebook with Virtualenv
 
