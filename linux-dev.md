@@ -9,15 +9,9 @@
 
 ## Better Git integration with Bash
 
-<https://github.com/twolfson/sexy-bash-prompt>
+[PS1 generator](http://bashrcgenerator.com/), something straightforward:
 
-    (cd /tmp && git clone --depth 1 https://github.com/twolfson/sexy-bash-prompt && cd sexy-bash-prompt && make install) && source ~/.bashrc
-    
-**OR** <https://github.com/arialdomartini/oh-my-git>
-
-Note [PS1 generator](http://bashrcgenerator.com/) (something like:)
-
-    export PS1="\u \[$(tput sgr0)\]\[\033[38;5;11m\][\w]\[$(tput sgr0)\]\[\033[38;5;15m\] @\[$(tput bold)\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+    export PS1="\[\033[38;5;11m\][\w]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
 
 ## Install PIP for the local user
