@@ -92,4 +92,6 @@
 
 - Fix imports in some circumstances. Add a `.pth` file
 
+```
     echo "~/projects/<name>" >> ~/.virtualenvs/<venv>/lib/python/site-packages/<name>.pth
+```
