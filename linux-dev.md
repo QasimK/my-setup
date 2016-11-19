@@ -54,10 +54,11 @@ Copy the public key to the clipboard
 
 ## Setup up SSH to keep connections alive
 
-TODO: get ControlPersist etc.
-
-    echo "Host *" >> ~/.ssh/config
+    echo "Host * !bitbucket.org !github.com" >> ~/.ssh/config
     echo "    ServerAliveInterval 240" >> ~/.ssh.config
+    echo "    ControlPersist 1h" >> ~/.ssh.config
+    echo "    ControlMaster auto" >> ~/.ssh.config
+    echo "    ControlPath ~/.ssh/controlmasters/%r@%h:%p" >> ~/.ssh.config
     chmod 600 ~/.ssh/config
 
 ## Setup tmux
