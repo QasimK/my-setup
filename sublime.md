@@ -5,6 +5,7 @@
 ```
 {
     "atomic_save": true,
+    "auto_complete_commit_on_tab": true,
     "font_size": 12,
     "rulers": [80, 100],
     "shift_tab_unindent": true,
