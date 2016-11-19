@@ -1,5 +1,10 @@
 # My Sublime Text 3
 
+Install:
+
+	sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt update && sudo apt install sublimetext3
+
+
 ## Settings
 
 ```
