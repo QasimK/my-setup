@@ -7,19 +7,12 @@
     source ~/.bashrc
 
 
-## Better Git integration with Bash
-
-[PS1 generator](http://bashrcgenerator.com/), something straightforward:
-
-    export PS1="\[\033[38;5;11m\][\w]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
-
-
 ## Install PIP for the local user
-<https://pip.pypa.io/en/stable/user_guide/>
+<https://pip.pypa.io/en/stable/installing/>
 
     wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py --user && rm get-pip.py
 
-Add pip command to path (check with `echo $PATH`)
+*(May not have to do this)* Add pip command to path (check with `echo $PATH`)
 
     echo "PATH=\$PATH:~/.local/bin" >> ~/.bashrc
     source ~/.bashrc
@@ -47,7 +40,7 @@ Make the commands available
 ## Create SSH key to use locally (with GitHub)
 <https://help.github.com/articles/generating-ssh-keys/>
 
-    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    ssh-keygen -t rsa -b 4096 -C QasimK...
 
 Copy the public key to the clipboard
 
@@ -61,9 +54,15 @@ Copy the public key to the clipboard
 
 ## Setup up SSH to keep connections alive
 
+TODO: get ControlPersist etc.
+
     echo "Host *" >> ~/.ssh/config
     echo "    ServerAliveInterval 240" >> ~/.ssh.config
     chmod 600 ~/.ssh/config
+
+## Setup tmux
+
+TODO: `~/.tmux.conf`.
 
 
 ## Setup a Virtualenv using Python 3
