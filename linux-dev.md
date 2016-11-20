@@ -60,6 +60,7 @@ Copy the public key to the clipboard
     echo '    ControlMaster auto' >> ~/.ssh/config
     echo '    ControlPath ~/.ssh/controlmasters/%r@%h:%p' >> ~/.ssh/config
     chmod 600 ~/.ssh/config
+    mkdir ~/.ssh/controlmasters
 
 ## Setup tmux
 
