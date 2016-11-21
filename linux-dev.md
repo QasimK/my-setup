@@ -85,6 +85,8 @@ Copy and paste this into `~/.tmux.conf`
 
     run '~/.tmux/plugins/tpm/tpm'
 
+Install the [tmux plugins](https://github.com/tmux-plugins/tpm) with `Prefix + I`
+
 
 ## Setup a Virtualenv using Python 3
 
