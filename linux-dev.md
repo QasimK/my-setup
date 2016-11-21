@@ -8,9 +8,9 @@
 
 
 ## Install PIP for the local user
-<https://pip.pypa.io/en/stable/installing/>
+<https://pip.pypa.io/en/stable/installing/> (Note the use of python3 here)
 
-    wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py --user && rm get-pip.py
+    wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py --user && rm get-pip.py
 
 *(May not have to do this)* Add pip command to path (check with `echo $PATH`)
 
@@ -64,7 +64,26 @@ Copy the public key to the clipboard
 
 ## Setup tmux
 
-TODO: `~/.tmux.conf`.
+Install [powerline-status](https://powerline.readthedocs.io/en/latest/installation.html).
+
+Copy and paste this into `~/.tmux.conf`
+
+    set -g @plugin 'tmux-plugins/tpm'
+
+    set -g @plugin 'tmux-plugins/tmux-resurrect'
+    set -g @plugin 'tmux-plugins/tmux-continuum'
+    set -g @plugin 'tmux-plugins/tmux-sensible'
+    set -g @plugin 'tmux-plugins/tmux-yank'
+    set -g @plugin 'tmux-plugins/tmux-pain-control'
+
+    set -g @resurrect-capture-pane-contents 'on'
+    set -g @continuum-restore 'on'
+
+    set-window-option -g xterm-keys on
+
+    source "/home/qasim/.local/lib/python3.5/site-packages/powerline/bindings/tmux/powerline.conf"
+
+    run '~/.tmux/plugins/tpm/tpm'
 
 
 ## Setup a Virtualenv using Python 3
