@@ -51,13 +51,13 @@ Install:
 
 **Web**
 
+- `Babel` - Modern JS (& .jsx) syntax highlighting
 - SublimeLinter-jshint?
 - JsFormat?
 - DocBlockr?
 - jQuery?
 - Sass (Requires Ruby)
 - SassBeautify (Requires Sass)
-- babel-sublime
 
 
 ## Sublime Anaconda setup
