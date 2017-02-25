@@ -20,6 +20,7 @@ Install:
         ".tox/*",
         "htmlcov/*"
     ],
+    "draw_centered": true,  // Maybe not...
     "folder_exclude_patterns":
     [
         ".git",
@@ -32,12 +33,18 @@ Install:
         "Rust",
         "Vintage"
     ],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
     "rulers":
     [
         80,
         100
     ],
-    "shift_tab_unindent": true
+    "shift_tab_unindent": true,
+    "spell_check": true
 }
 ```
 
