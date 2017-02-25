@@ -12,6 +12,7 @@ Install:
     "atomic_save": true,
     "auto_complete_commit_on_tab": true,
     "auto_complete_cycle": true,
+    "auto_find_in_selection": true,
     "binary_file_patterns":
     [
         "node_modules/*",
