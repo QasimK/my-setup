@@ -11,24 +11,49 @@ Install:
 {
     "atomic_save": true,
     "auto_complete_commit_on_tab": true,
-    "auto_find_in_selection": true,
-    "font_size": 12,
-    "rulers": [80, 100],
-    "shift_tab_unindent": true,
-    "show_encoding": true,
-    "folder_exclude_patterns": [
-        ".git",
-        ".cache",
-        "__pycache__",
-    ],
+    "auto_complete_cycle": true,
     "binary_file_patterns":
     [
         "node_modules/*",
         ".codeintel/*",
         ".tox/*",
-        "htmlcov/*",
-    ]
+        "htmlcov/*"
+    ],
+    "folder_exclude_patterns":
+    [
+        ".git",
+        ".cache",
+        "__pycache__"
+    ],
+    "font_size": 11,
+    "ignored_packages":
+    [
+        "Rust",
+        "Vintage"
+    ],
+    "rulers":
+    [
+        80,
+        100
+    ],
+    "shift_tab_unindent": true
 }
+```
+
+## Keymaps
+
+Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
+
+```
+[
+	// navigation with tab in autocomplete popup
+	{ "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "auto_complete_visible" }] },
+	{ "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "auto_complete_visible" }] },
+
+	// navigation with tab in overlay
+	{ "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] },
+	{ "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] }
+]
 ```
 
 ## Packages
@@ -37,12 +62,12 @@ Install:
 
 **General**
 
-- EditorConfig - See console for currently active config
+- EditorConfig
+  - See console for currently active config
+- EditorConfigSnippets
 - SideBarEnhancements
-- SublimeLinter - Used for other linters
 - Git
 - BracketHighlighter
-- LineEndings
 
 **Python**
 
@@ -59,8 +84,16 @@ Install:
 - Sass (Requires Ruby)
 - SassBeautify (Requires Sass)
 
+**Rust**
 
-## Sublime Anaconda setup
+- RustEnhance
+  - Be sure to disable the `Rust` package and to have `rustc` and `cargo` available on cmd
+
+**Maybe**
+
+- SublimeLinter - Used for other linters
+
+### Sublime Anaconda setup
 
 - Install. Note keyboard shortcuts:
     - `ctrl-alt-g` goto definition
