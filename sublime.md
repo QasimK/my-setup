@@ -99,12 +99,25 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 **Rust**
 
-- RustEnhance
+- RustEnhanced
+  - Build features (ctrl+b), test features, *inline syntax highlight*
   - Be sure to disable the `Rust` package and to have `rustc` and `cargo` available on cmd
 - RustAutoComplete
+  - What it says on the tin.
   - Install and test [Racer](https://github.com/phildawes/racer)
   - *Goto Definition: F2*
+- BeautifyRust
+  - Autoformat on save
+  - Install [Rustfmt](https://github.com/rust-lang-nursery/rustfmt) `cargo install rustfmt`
+  - Set the package settings:
+```
+{
+  "run_on_save": true,
+  "show_errors": false,  // Annoying warning with e.g. syntax errors
+}
+```
 - TOML
+  - Syntax highlight `Cargo.toml` files
 
 **Maybe**
 
