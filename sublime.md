@@ -44,7 +44,9 @@ Install:
         100
     ],
     "shift_tab_unindent": true,
-    "spell_check": true
+    "spell_check": true,
+    // Disable auto-completion on pressing tab if there is no pop-up
+    "tab_completion": false,
 }
 ```
 
@@ -54,13 +56,16 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 ```
 [
-	// navigation with tab in autocomplete popup
-	{ "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "auto_complete_visible" }] },
-	{ "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "auto_complete_visible" }] },
+    // Navigation with tab in auto-complete pop-up
+    { "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "auto_complete_visible" }] },
+    { "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "auto_complete_visible" }] },
 
-	// navigation with tab in overlay
-	{ "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] },
-	{ "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] }
+    // Navigation with tab in overlay
+    { "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] },
+    { "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] },
+
+    // ctrl+space shows tab completion pop-up
+    { "keys": ["ctrl+space"], "command": "auto_complete" },
 ]
 ```
 
