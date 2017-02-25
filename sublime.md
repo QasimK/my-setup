@@ -101,6 +101,9 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 - RustEnhance
   - Be sure to disable the `Rust` package and to have `rustc` and `cargo` available on cmd
+- RustAutoComplete
+  - Install and test [Racer](https://github.com/phildawes/racer)
+  - *Goto Definition: F2*
 - TOML
 
 **Maybe**
