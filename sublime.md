@@ -20,7 +20,6 @@ Install:
         ".tox/*",
         "htmlcov/*"
     ],
-    "draw_centered": true,  // Maybe not...
     "folder_exclude_patterns":
     [
         ".git",
@@ -33,11 +32,11 @@ Install:
         "Rust",
         "Vintage"
     ],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
+    "indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
     "rulers":
     [
         80,
@@ -129,6 +128,7 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
     - `ctrl-alt-g` goto definition
     - `ctrl-alt-f` find usages
     - `ctrl-alt-d` show docs
+    - `ctrl-alt-r` auto-pep8
     - Rename object under cursor (command search/right-click)
     - McCabe code complexity (command search/right-click)
 
@@ -136,8 +136,14 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 ```
 {
+    "anaconda_linter_phantoms": true,
+    "anaconda_linter_persistent": true,
+    "anaconda_linting_behaviour": "load-save",  // TODO: Check out atomic save above problems??
+    "auto_python_builder_enabled": false,  // Not used by me; can cause problems
     "validate_imports": true,
-    "pep8_ignore": ["E501"]
+    "suppress_word_completions": true,  // Ignore Sublime's auto-complete
+    "suppress_explicit_completions": true,  // Ignore Sublime's auto-complete
+    "pep8_ignore": ["E241", "E242", "W503"],
 }
 ```
 
@@ -149,19 +155,12 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 }
 ```
 
-- Set Up your virtualenv per project - `Project > Edit Project` with
+- **PER PROJECT** Set up your virtualenv
+
+Create a `.anaconda` file in your project root
 
 ```
 {
-	"settings":
-	{
-		"python_interpreter": "~/.virtualenvs/<venv>/bin/python"
-	}
+    "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
 }
-```
-
-- Fix imports in some circumstances. Add a `.pth` file
-
-```
-    echo "~/projects/<name>" >> ~/.virtualenvs/<venv>/lib/python/site-packages/<name>.pth
 ```
