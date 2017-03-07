@@ -37,6 +37,13 @@ Make the commands available
     source ~/.bashrc
 
 
+## Python PDB .pdbrc
+
+In PDB use `ll` to [show the surrounding lines](https://stackoverflow.com/questions/5169702/how-do-i-list-the-current-line-in-python-pdb/11847915#11847915).
+
+    echo "alias ll u;;d;;l" >> ~/.pdbrc
+
+
 ## Create SSH key to use locally (with GitHub)
 <https://help.github.com/articles/generating-ssh-keys/>
 
