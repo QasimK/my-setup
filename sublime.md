@@ -83,7 +83,19 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 **Python**
 
-- Anaconda
+- Anaconda - Like flake8 (pycodestyle PEP8; PEP257 (TODO: Enable?); PyFlakes; McCabe)
+    - `ctrl-alt-g` goto definition
+    - `ctrl-alt-f` find usages
+    - `ctrl-alt-d` show docs
+    - `ctrl-alt-r` auto-pep8
+    - Rename object under cursor (command search/right-click)
+    - McCabe code complexity (command search/right-click)
+    - **Per project setup** - create a `.anaconda file` in project root
+```
+{
+    "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
+}
+```
 - Djaneiro
 
 **Web**
@@ -124,14 +136,6 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 ### Sublime Anaconda setup
 
-- Install. Note keyboard shortcuts:
-    - `ctrl-alt-g` goto definition
-    - `ctrl-alt-f` find usages
-    - `ctrl-alt-d` show docs
-    - `ctrl-alt-r` auto-pep8
-    - Rename object under cursor (command search/right-click)
-    - McCabe code complexity (command search/right-click)
-
 - Set Up Anaconda settings `Preferences > Package Settings > Anaconda > Settings - User`
 
 ```
@@ -147,20 +151,10 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 }
 ```
 
-- Set Up `Preferences > Browse Packages > User (Folder) > Python.sublime-settings` with
+- Set up keymaps `Preferences > Browse Packages > User (Folder) > Python.sublime-settings`
 
 ```
 {
     "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}]
-}
-```
-
-- **PER PROJECT** Set up your virtualenv
-
-Create a `.anaconda` file in your project root
-
-```
-{
-    "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
 }
 ```
