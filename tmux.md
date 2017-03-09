@@ -2,7 +2,7 @@
 
 Install [powerline-status](https://powerline.readthedocs.io/en/latest/installation.html).
 
-Copy and paste this into `~/.tmux.conf`
+Create `~/.tmux.conf` with
 
     set -g @plugin 'tmux-plugins/tpm'
 
@@ -15,10 +15,28 @@ Copy and paste this into `~/.tmux.conf`
     set -g @resurrect-capture-pane-contents 'on'
     set -g @continuum-restore 'on'
 
+    # Shift-click to drag-select; select/adjust panes with the mouse
+    set -g mouse on
+    # Word-movement keyboard keys work
     set-window-option -g xterm-keys on
 
-    source "/home/qasim/.local/lib/python3.5/site-packages/powerline/bindings/tmux/powerline.conf"
+    # Double-check this line
+    source "~/.local/lib/python3.5/site-packages/powerline/bindings/tmux/powerline.conf"
 
     run '~/.tmux/plugins/tpm/tpm'
     
 Install the [tmux plugins](https://github.com/tmux-plugins/tpm) with `Prefix + I`
+
+## Using Resurrect and Continuum
+
+TODO
+
+## Keyboard reference
+
+Prefix is `<ctrl>-b`
+
+Keyboard  | Does
+--------- | -----
+c | New window
+, | Rename window
+% | Split vertical, todo use that other plugin
