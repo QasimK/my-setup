@@ -27,6 +27,8 @@ Create `~/.tmux.conf` with
     
 Install the [tmux plugins](https://github.com/tmux-plugins/tpm) with `Prefix + I`
 
+TODO: Take a gander at https://github.com/tony/tmux-config/blob/master/.tmux.conf
+
 ## Using Resurrect and Continuum
 
 TODO
