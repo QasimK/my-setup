@@ -4,7 +4,7 @@ Install [powerline-status](https://powerline.readthedocs.io/en/latest/installati
 
 Create `~/.tmux.conf` with
 
-    set -g @plugin 'tmux-plugins/tpm'
+    set -g @plugin 'tmux-plugins/tpm'new-session  
 
     set -g @plugin 'tmux-plugins/tmux-resurrect'
     set -g @plugin 'tmux-plugins/tmux-continuum'
@@ -14,7 +14,9 @@ Create `~/.tmux.conf` with
 
     set -g @resurrect-capture-pane-contents 'on'
     set -g @continuum-restore 'on'
-
+    
+    # Create a session if one doesn't exist (use with tmux a)
+    new-session
     # Shift-click to drag-select; select/adjust panes with the mouse
     set -g mouse on
     # Word-movement keyboard keys work
