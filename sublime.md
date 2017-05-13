@@ -96,6 +96,13 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
     "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
 }
 ```
+    - **Per project setup** - Edit Project:
+```
+    "settings":
+    {
+        "pep8_max_line_length": 100
+    }
+```
 - Djaneiro
 
 **Web**
