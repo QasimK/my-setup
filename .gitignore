@@ -1,2 +1,9 @@
+# Sublime
 *.sublime-project
 *.sublime-workspace
+.anaconda
+
+# Vim
+*~
+*.swp
+*.swo
