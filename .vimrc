@@ -28,3 +28,6 @@ set incsearch          " Incremental search
 set autowrite          " Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
 set mouse=a            " Enable mouse usage (all modes)
+
+" Save files as sudo with ":w!!" when forgetting to start vim with sudo
+cmap w!! w !sudo tee > /dev/null %
