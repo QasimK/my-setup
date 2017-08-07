@@ -77,7 +77,6 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 - EditorConfig
   - See console for currently active config
 - EditorConfigSnippets
-- SideBarEnhancements
 - Git
 - BracketHighlighter
 
