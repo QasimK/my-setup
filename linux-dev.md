@@ -14,7 +14,7 @@
 
 *(May not have to do this)* Add pip command to path (check with `echo $PATH`)
 
-    echo "PATH=\$PATH:~/.local/bin" >> ~/.bashrc
+    echo "export PATH=\${PATH}:~/.local/bin" >> ~/.bashrc
     source ~/.bashrc
 
 
