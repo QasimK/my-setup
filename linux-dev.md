@@ -27,7 +27,7 @@ Make the commands available
 
     echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bashrc
     echo "export PROJECT_HOME=$HOME/projects" >> ~/.bashrc
-    echo "source ~/.local/bin/virtualenvwrapper.sh" >> ~/.bashrc
+    echo "source ~/.local/bin/virtualenvwrapper_lazy.sh" >> ~/.bashrc
     source ~/.bashrc
 
 
