@@ -1,10 +1,10 @@
 # Setup Linux (Mint) for development
 
-## Use Vim with Bash
+## Setup dotfiles
 
-    echo "export VISUAL=vim" >> ~/.bashrc
-    echo "export EDITOR=vim" >> ~/.bashrc
-    source ~/.bashrc
+    wget https://raw.githubusercontent.com/QasimK/my-setup/master/gogo.sh
+    chmod +x gogo.sh
+    ./gogo.sh
 
 
 ## Install PIP for the local user
