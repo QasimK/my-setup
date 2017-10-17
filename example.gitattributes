@@ -1,3 +1,5 @@
+# .gitattributes git repository file
+
 # Normalises line endings to LF.
 # https://stackoverflow.com/questions/21472971/what-is-the-purpose-of-text-auto-in-gitattributes
 text=auto
