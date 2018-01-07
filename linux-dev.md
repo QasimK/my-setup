@@ -8,7 +8,7 @@
 
 
 ## Install PIP for the local user
-<https://pip.pypa.io/en/stable/installing/> (Note the use of python3 here)
+<https://pip.pypa.io/en/stable/installing/> (**We install pip for Python 3.**)
 
     wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py --user && rm get-pip.py
 
@@ -27,6 +27,7 @@ Make the commands available
 
     echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bashrc
     echo "export PROJECT_HOME=$HOME/projects" >> ~/.bashrc
+    echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc
     echo "source ~/.local/bin/virtualenvwrapper_lazy.sh" >> ~/.bashrc
     source ~/.bashrc
 
