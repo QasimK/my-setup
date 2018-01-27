@@ -7,3 +7,9 @@
 *~
 *.swp
 *.swo
+
+# JetBrains
+.idea/
+
+# Python
+venv/
