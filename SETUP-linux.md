@@ -17,9 +17,15 @@
     echo "export PATH=\${PATH}:~/.local/bin" >> ~/.bashrc
     source ~/.bashrc
 
+## Install pipenv
+
 **NOTE**: Consider using pipenv with/instead of virtualenvwrapper/virtualfish
 
     pip install --user pipenv
+
+Install auto-completions for fish:
+
+    echo "eval (pipenv --completion)" >> ~/.config/fish/config.fish
 
 
 ## Install virtualenvwrapper for the local user (Bash shell)
