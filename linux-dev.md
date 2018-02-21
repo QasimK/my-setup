@@ -18,7 +18,7 @@
     source ~/.bashrc
 
 
-## Install virtualenvwrapper for the local user
+## Install virtualenvwrapper for the local user (Bash shell)
 <https://virtualenvwrapper.readthedocs.org/en/latest/install.html>
 
     pip install --user virtualenvwrapper
@@ -31,6 +31,16 @@ Make the commands available
     echo "source ~/.local/bin/virtualenvwrapper_lazy.sh" >> ~/.bashrc
     source ~/.bashrc
 
+
+## Install virtualfish for the local user (Fish shell)
+
+(virtualenvwrapper for the fish shell)
+
+    pip install --user virtualfish
+
+Enable virtualfish:
+
+    echo "eval (python -m virtualfish auto_activation projects)" >> ~/.config/fish/config.fish
 
 ## Bash shortcuts
 
@@ -66,7 +76,14 @@ Copy the public key to the clipboard
 
 ## Setup a Virtualenv using Python 3
 
-    mkproject --python=`which python3` project-name
+With `virtualenvwrapper` set-up fully:
+
+    mkproject --python=`which python3` <name>
+
+With virtualfish set-up fully:
+
+    vf project -p (which python3) <name>
+    vf connect
 
 
 ## Setup Jupyter Notebook with Virtualenv
