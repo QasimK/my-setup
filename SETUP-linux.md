@@ -17,6 +17,10 @@
     echo "export PATH=\${PATH}:~/.local/bin" >> ~/.bashrc
     source ~/.bashrc
 
+**NOTE**: Consider using pipenv with/instead of virtualenvwrapper/virtualfish
+
+    pip install --user pipenv
+
 
 ## Install virtualenvwrapper for the local user (Bash shell)
 <https://virtualenvwrapper.readthedocs.org/en/latest/install.html>
