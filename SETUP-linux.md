@@ -1,4 +1,4 @@
-# Setup Linux (Mint) for development
+# Setup Linux (Mint) for Development
 
 ## Setup dotfiles
 
