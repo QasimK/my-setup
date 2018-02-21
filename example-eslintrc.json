@@ -1,6 +1,3 @@
-# Linting Javascript
-
-```
 {
     "extends": "standard",
     "plugins": [
@@ -16,5 +13,3 @@
         "comma-dangle": [2, "always-multiline"]
     }
 }
-```
-
