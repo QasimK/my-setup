@@ -1,5 +1,7 @@
 # Setup Linux (Mint) for Development
 
+Install mosh, tmux, fish, vim, git, htop.
+
 ## Setup dotfiles
 
     wget https://raw.githubusercontent.com/QasimK/my-setup/master/gogo.sh
@@ -14,8 +16,11 @@
 
 *(May not have to do this)* Add pip command to path (check with `echo $PATH`)
 
+    # Bash
     echo "export PATH=\${PATH}:~/.local/bin" >> ~/.bashrc
     source ~/.bashrc
+    # Fish
+    set -U fish_user_paths ~/.local/bin $fish_user_paths
 
 ## Install pipenv
 
