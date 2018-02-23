@@ -60,10 +60,11 @@ Enable virtualfish:
 
 ## Create SSH key to use locally (with GitHub)
 <https://help.github.com/articles/generating-ssh-keys/>
+<https://https://qasimk.gitbooks.io/the-programmer-s-compendium/linux/ssh.html>
 
-    ssh-keygen -t rsa -b 4096 -C QasimK...
+    ssh-keygen -t rsa -b 4096 -C User@Device#Realm
 
-Copy the public key to the clipboard
+Copy the public key to the clipboard (e.g. to add to GitHub).
 
     xclip -selection clipboard ~/.ssh/id_rsa.pub
 
