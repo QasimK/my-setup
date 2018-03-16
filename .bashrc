@@ -1,0 +1,11 @@
+# .bashrc additions
+
+```
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# Bash Completion
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+```
