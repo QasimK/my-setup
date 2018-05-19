@@ -3,3 +3,5 @@ $include /etc/inputrc
 
 # Case-insensitive auto-completion
 set completion-ignore-case On
+# Don't make audio noise when auto-complete fails
+set bell-style visible
