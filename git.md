@@ -10,6 +10,10 @@
 
     git config --global alias.where "rev-parse --abbrev-ref HEAD"
 
+**git tree** - show log as a tree
+
+    git config --global alias.tree "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 
 ## Config
 
