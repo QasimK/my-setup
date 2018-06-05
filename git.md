@@ -22,7 +22,7 @@
     git config --global user.name QasimK
     git config --global push.default simple
     git config --global core.excludesfile ~/.config/git/gitignore
-    git config --global commit.template ~/.config/git/commitmessage
+    git config --global commit.template ~/.config/git/commit.template
 
 Create `~/.config/git/gitignore` with
 
