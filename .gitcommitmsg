@@ -1,2 +1,38 @@
-# Write one...
-# https://github.com/joelparkerhenderson/git_commit_message
+
+
+
+# Titles
+# Add = Create a capability e.g. feature, test, dependency (SemVer Minor).
+# Fix = Fix an issue e.g. bug, typo, accident, misstatement (SemVer Patch).
+# Drop = Delete a capability e.g. feature, test, dependency (SemVer Major).
+# Bump = Increase the version of something e.g. a dependency.
+# Make = Change the build process, or tools, or infrastructure.
+# Start = Begin doing something; e.g. enable a toggle, feature flag, etc.
+# Stop = End doing something; e.g. disable a toggle, feature flag, etc.
+# Refactor = A change that MUST be just refactoring.
+# Reformat = A change that MUST be just formatting, e.g. omit whitespace.
+# Rephrase = A change that MUST be just textual, e.g. edit a comment, doc, etc.
+# Optimize = A change that MUST be just about performance, e.g. speed up code.
+# Document = A change that MUST be only in the documentation, e.g. help files.
+
+# Footers
+
+# When there are multiple people (e.g. pair programming)
+# By: Alice Adams (alice@eaxmple.com)
+
+# References (e.g. project tracker, articles)
+# See: https://github.com/user/repo/issues/789
+# See: https://jira.com/tasks/123
+# See: https://wikipedia.com/quicksort
+
+# Lesser used (cross-referencing, possible automatic prioritisation or task execution)
+# Keywords: security, encryption, authentication
+# Importance: high
+
+# Useful for looking at relevant commits or URLs
+# References: ...
+# Supersedes: ...
+# Obsoletes: ...
+# See-Also: ...
+
+# Ref: https://github.com/joelparkerhenderson/git_commit_message
