@@ -17,12 +17,14 @@
 
 ## Config
 
+    mkdir -p ~/.config/git
     git config --global user.email QasimK@users.noreply.github.com
     git config --global user.name QasimK
     git config --global push.default simple
-    git config --global core.excludesfile ~/.gitignore
+    git config --global core.excludesfile ~/.config/git/gitignore
+    git config --global commit.template ~/.config/git/commitmessage
 
-Create `~/.gitignore` with
+Create `~/.config/git/gitignore` with
 
     *.sublime-project
     *.sublime-workspace
