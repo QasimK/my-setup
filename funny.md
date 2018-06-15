@@ -36,3 +36,7 @@
         echo "Branch 'master' branch has been remotely deleted from 'origin'"
         exit 0
     fi
+
+## Greek Semicolon
+
+Here it is: `;`
