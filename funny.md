@@ -40,3 +40,11 @@
 ## Greek Semicolon
 
 Here it is: `;`
+
+## Python Valid Apostrophe
+
+TODO: Find char.
+
+## Links
+
+https://medium.com/feature-creep/the-software-engineer-s-guide-to-asserting-office-dominance-ddea7b598df7
