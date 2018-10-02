@@ -5,3 +5,7 @@ declare -a FILES=('.inputrc' '.vimrc' '.tmux.conf' '.gitignore' '.gitcommitmessa
 for FILE in "${FILES[@]}"; do
     wget -q --backups=1 $URL/$FILE
 done
+
+mkdir -p ~/.config/git
+mv --backup ~/.gitignore ~/.config/git/gitignore
+mv --backup ~/.gitcommitmessage ~/.config/git/commit.template
