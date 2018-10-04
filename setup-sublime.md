@@ -27,7 +27,7 @@ Install:
         ".cache",
         "__pycache__"
     ],
-    // "font_face": "Fira Code",
+    "font_face": "Fira Code",
     "font_size": 11,
     "ignored_packages":
     [
