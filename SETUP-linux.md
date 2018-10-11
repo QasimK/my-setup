@@ -2,6 +2,11 @@
 
 Install mosh, tmux, fish, vim, git, htop.
 
+Fish:
+```
+set -U EDITOR vim
+```
+
 ## Setup dotfiles
 
     wget https://raw.githubusercontent.com/QasimK/my-setup/master/gogo.sh
