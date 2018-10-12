@@ -16,3 +16,6 @@ venv/
 
 # Vagrant
 .vagrant/
+
+# Personal Jupyter Notebook
+jupyter/
