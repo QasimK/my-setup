@@ -1,17 +1,5 @@
 # Useful Git Stuff
 
-## Aliases
-
-* [**git stash-rename**](http://stackoverflow.com/a/25935360/5173025) Usage: `git stash-rename stash@{2} Nuke-files`.
-* **git where**: show current branch
-* **git tree**: show log as a tree
-* [**git slap**](https://stackoverflow.com/a/44827367): git annotate ignoring formatting changes
-
-
-## Config
-
-(gogo.sh copies over `gitignore` and `commit.template` automatically.)
-
     git config --global user.email noreply@QasimK.io
     git config --global user.name QasimK
     git config --global push.default simple
@@ -21,3 +9,12 @@
     git config --global alias.where "rev-parse --abbrev-ref HEAD"
     git config --global alias.tree "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     git config --global alias.slap 'blame -w -M'
+
+Run `gogo.sh` to get the `gitignore` and `commit.template` files.
+
+## Alias Glossary
+
+* [**git stash-rename**](http://stackoverflow.com/a/25935360/5173025) Usage: `git stash-rename stash@{2} Nuke-files`.
+* **git where**: show current branch
+* **git tree**: show log as a tree
+* [**git slap**](https://stackoverflow.com/a/44827367): git annotate ignoring formatting changes
