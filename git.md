@@ -21,7 +21,7 @@ Run `gogo.sh` to get the `gitignore` and `commit.template` files.
 
 ## Hooks
 
-* Prevent pushes to master by placing this file in your project's `.git/hooks/prepush` and `chmod +x .git/hooks/prepush`.
+* Prevent pushes to master by placing this file in your project's `.git/hooks/pre-push` and `chmod +x .git/hooks/pre-push`.
 
 ```
 #!/bin/sh
