@@ -1,2 +1,4 @@
 # Show surrounding lines
 alias ll u;;d;;l
+# Easily enter IPython for multi-line commands
+alias ip from IPython import embed; embed()
