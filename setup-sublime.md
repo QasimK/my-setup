@@ -9,12 +9,12 @@ Install:
 
 ```
 {
-	"added_words":
-	[
-		"virtualenv",
-		"fallback",
-		"datetime"
-	],
+    "added_words":
+    [
+        "virtualenv",
+        "fallback",
+        "datetime"
+    ],
     "atomic_save": true,
     "auto_complete_commit_on_tab": true,
     "auto_complete_cycle": true,
