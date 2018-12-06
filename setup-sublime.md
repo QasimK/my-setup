@@ -9,6 +9,12 @@ Install:
 
 ```
 {
+	"added_words":
+	[
+		"virtualenv",
+		"fallback",
+		"datetime"
+	],
     "atomic_save": true,
     "auto_complete_commit_on_tab": true,
     "auto_complete_cycle": true,
@@ -20,6 +26,7 @@ Install:
         ".tox/*",
         "htmlcov/*"
     ],
+    "dictionary": "Packages/Language - English/en_GB.dic",
     // "dpi_scale": 2,
     "folder_exclude_patterns":
     [
