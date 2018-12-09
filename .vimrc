@@ -1,3 +1,6 @@
+" Use X clipboard (requires gvim NOT vim to be installed)
+set clipboard=unnamedplus
+
 set tabstop=8           " Size of a hard tabstop (so we can tell the difference)
 set expandtab           " Always uses spaces instead of tab characters
 set shiftwidth=4        " Size of an "indent"
