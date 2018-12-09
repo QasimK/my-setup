@@ -7,6 +7,7 @@ set shiftwidth=4        " Size of an "indent"
 set smarttab            " Automatically indent the right amount
 
 " Relative and Absolute line numbers
+noremap <C-L> :set number! relativenumber!
 set relativenumber
 set number
 
