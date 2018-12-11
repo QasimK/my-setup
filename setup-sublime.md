@@ -89,6 +89,17 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 - Git
 - BracketHighlighter
 
+**Vintage**
+
+- Enable in the config above
+- In Sublime package settings `~/.config/sublime-text-3/Vintage/Preferences.sublime-settings`:
+
+```
+{
+    "vintage_use_clipboard": true
+}
+```
+
 **Python**
 
 - Anaconda - Like flake8 (pycodestyle PEP8; PEP257 (TODO: Enable?); PyFlakes; McCabe)
