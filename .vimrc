@@ -1,4 +1,5 @@
-# <F2> to toggle between copy-and-paste that Just Works (TM)
+" <F2> to toggle between copy-and-paste that Just Works (TM)
+" OR: use gvim
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
@@ -19,6 +20,14 @@ set shiftwidth=4        " Size of an "indent"
 set smarttab            " Automatically indent the right amount
 set number              " Show line numbers
 set relativenumber      " Show relative line numbers
+set showcmd             " Show (partial) command in status line.
+set showmatch           " Show matching brackets.
+set ignorecase          " Do case insensitive matching
+set smartcase           " Do smart case matching
+set incsearch           " Incremental search
+set autowrite           " Automatically save before commands like :next and :make
+set hidden              " Hide buffers when they are abandoned
+set mouse=a             " Enable mouse usage (all modes)
 
 " Syntax highlighting
 if !exists("g:syntax_on")
@@ -28,15 +37,6 @@ endif
 " Auto-indent (plain text and for file types)
 set autoindent
 filetype plugin indent on
-
-set showcmd            " Show (partial) command in status line.
-set showmatch          " Show matching brackets.
-set ignorecase         " Do case insensitive matching
-set smartcase          " Do smart case matching
-set incsearch          " Incremental search
-set autowrite          " Automatically save before commands like :next and :make
-set hidden             " Hide buffers when they are abandoned
-set mouse=a            " Enable mouse usage (all modes)
 
 " Save files as sudo with ":w!!" when forgetting to start vim with sudo
 cmap w!! w !sudo tee > /dev/null %
