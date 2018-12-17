@@ -1,24 +1,29 @@
+# <F2> to toggle between copy-and-paste that Just Works (TM)
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+
+" <Ctrl-L> to switch line numbers on/off
+noremap <C-L> :set number! relativenumber!
+
+" Unset the "last search pattern" register by hitting <Return>
+nnoremap <CR> :nohlsearch<CR><CR>
+set hlsearch            " Highlight search
+
 " Use X clipboard (requires gvim NOT vim to be installed)
 set clipboard=unnamedplus
 
+set showmode
 set tabstop=8           " Size of a hard tabstop (so we can tell the difference)
 set expandtab           " Always uses spaces instead of tab characters
 set shiftwidth=4        " Size of an "indent"
 set smarttab            " Automatically indent the right amount
-
-" Relative and Absolute line numbers
-noremap <C-L> :set number! relativenumber!
-set relativenumber
-set number
+set number              " Show line numbers
+set relativenumber      " Show relative line numbers
 
 " Syntax highlighting
 if !exists("g:syntax_on")
     syntax enable
 endif
-
-" Unset the "last search pattern" register by hitting <Return>
-set hlsearch
-nnoremap <CR> :nohlsearch<CR><CR>
 
 " Auto-indent (plain text and for file types)
 set autoindent
@@ -36,5 +41,5 @@ set mouse=a            " Enable mouse usage (all modes)
 " Save files as sudo with ":w!!" when forgetting to start vim with sudo
 cmap w!! w !sudo tee > /dev/null %
 
-" Adjust netrw browser
+" Adjust netrw browser to do something...
 let g:netrw_banner = 0
