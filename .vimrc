@@ -3,8 +3,8 @@
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
-" <Ctrl-L> to switch line numbers on/off
-noremap <C-L> :set number! relativenumber!
+" <Ctrl-L> to switch line numbers on/off (order  systems which ignore permissions for UNIX domain sockets. Portable programs should not rely on this feature for security.matters)
+noremap <C-L> :set relativenumber! number!
 
 " Unset the "last search pattern" register by hitting <Return>
 nnoremap <CR> :nohlsearch<CR><CR>
