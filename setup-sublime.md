@@ -88,6 +88,11 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 - EditorConfigSnippets
 - Git
 - BracketHighlighter
+- Indent XML (Ctrl-K,F) (Also does JSON)
+- ColorPicker (Ctrl-Shift-C)
+- Color Highlighter
+- A File Icon
+- Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
 
 **Vintage**
 
