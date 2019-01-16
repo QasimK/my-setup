@@ -48,3 +48,4 @@ TODO: Find char.
 ## Links
 
 https://medium.com/feature-creep/the-software-engineer-s-guide-to-asserting-office-dominance-ddea7b598df7
+https://git-man-page-generator.lokaltog.net/
