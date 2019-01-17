@@ -19,6 +19,10 @@ Run `gogo.sh` to get the `gitignore` and `commit.template` files.
 * **git tree**: show log as a tree
 * [**git slap**](https://stackoverflow.com/a/44827367): git annotate ignoring formatting changes
 
+## Useful Commands
+
+* Delete branches that have been deleted on origin (i.e. merged + deleted): `git remote prune origin --dry-run`
+
 ## Hooks
 
 * [Prevent pushes to master](https://blog.ghost.org/prevent-master-push/) by placing this file in your project's `.git/hooks/pre-push` and `chmod +x .git/hooks/pre-push`.
