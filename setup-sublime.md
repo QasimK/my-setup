@@ -32,7 +32,9 @@ Install:
     [
         ".git",
         ".cache",
-        "__pycache__"
+        "__pycache__",
+	".idea"
+		".idea"
     ],
     "font_face": "Fira Code",
     "font_size": 11,
