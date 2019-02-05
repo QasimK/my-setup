@@ -39,6 +39,9 @@ Install auto-completions for fish:
 
 
 ## Install virtualenvwrapper for the local user (Bash shell)
+
+NOTE: `python -m venv newvenvfolder`!
+
 <https://virtualenvwrapper.readthedocs.org/en/latest/install.html>
 
     pip install --user virtualenvwrapper
