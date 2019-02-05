@@ -1,11 +1,6 @@
-# Setup Linux (Mint) for Development
+# Setup Linux for Development
 
 Install mosh, tmux, fish, vim, git, htop.
-
-Fish:
-```
-set -U EDITOR vim
-```
 
 ## Setup dotfiles
 
@@ -74,6 +69,8 @@ Enable virtualfish:
 ## Create SSH key to use locally (with GitHub)
 <https://help.github.com/articles/generating-ssh-keys/>
 <https://https://qasimk.gitbooks.io/the-programmer-s-compendium/linux/ssh.html>
+
+Set a passphrase for the new SSH key:recently
 
     ssh-keygen -t rsa -b 4096 -C User@Device#Realm
 
