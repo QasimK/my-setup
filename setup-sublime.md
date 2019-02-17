@@ -94,6 +94,7 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 - Color Highlighter
 - A File Icon
 - Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
+- TOML reddit
 
 **Vintage**
 
