@@ -165,8 +165,6 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
   "show_errors": false,  // Annoying warning with e.g. syntax errors
 }
 ```
-- TOML
-  - Syntax highlight `Cargo.toml` files
 
 **Maybe**
 
