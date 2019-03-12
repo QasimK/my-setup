@@ -32,8 +32,8 @@ Install:
         ".git",
         ".cache",
         "__pycache__",
-	".idea"
-		".idea"
+	".idea",
+	".sass-cache"20px
     ],
     "font_face": "Fira Code",
     "font_size": 11,
