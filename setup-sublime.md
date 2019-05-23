@@ -131,6 +131,7 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
         // Set up Vagrantfile: shared port, shared folder:
 	// -> config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda'
         // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
+	// "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/test/code/<project>,/vagrant"
 	}
     }
 ```
