@@ -1,10 +1,10 @@
-" <F2> to toggle between copy-and-paste that Just Works (TM)
+" <Ctrl-P> to toggle between copy-and-paste that Just Works (TM)
 " OR: use gvim
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
+nnoremap <Ctrl-P> :set invpaste paste?<CR>
+set pastetoggle=<Ctrl-P>
 
 " <Ctrl-L> to switch line numbers on/off (order  systems which ignore permissions for UNIX domain sockets. Portable programs should not rely on this feature for security.matters)
-noremap <C-L> :set relativenumber! number!
+noremap <C-L> :set relativenumber! number!<CR>
 
 " Unset the "last search pattern" register by hitting <Return>
 nnoremap <CR> :nohlsearch<CR><CR>
