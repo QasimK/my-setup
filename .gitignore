@@ -3,6 +3,9 @@
 *.sublime-workspace
 .anaconda
 
+# Direnv
+.envrc
+
 # Vim
 *~
 *.swp
@@ -13,6 +16,7 @@
 
 # Python
 venv/
+.venv/
 
 # Vagrant
 .vagrant/
