@@ -1,6 +1,6 @@
 # Setup Linux for Development
 
-Install mosh, tmux, fish, vim, git, htop.
+Install mosh, tmux, fish, vim, git, htop, direnv.
 
 ## Setup dotfiles
 
@@ -22,6 +22,54 @@ Install mosh, tmux, fish, vim, git, htop.
     # Fish
     set -U fish_user_paths ~/.local/bin $fish_user_paths
 
+## Install direnv
+
+direnv is preferred over using `virtualenv` and `virtualenvwrapper`
+
+Allow direnv to create virtualenvs inside the project:
+
+```bash
+realpath() {
+    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+layout_python-venv() {
+    local python=${1:-python3}
+    [[ $# -gt 0 ]] && shift
+    unset PYTHONHOME
+    if [[ -n $VIRTUAL_ENV ]]; then
+        VIRTUAL_ENV=$(realpath "${VIRTUAL_ENV}")
+    else
+        local python_version
+        python_version=$("$python" -c "import platform; print(platform.python_version())")
+        if [[ -z $python_version ]]; then
+            log_error "Could not detect Python version"
+            return 1
+        fi
+        VIRTUAL_ENV=$PWD/.direnv/python-venv-$python_version
+    fi  
+    export VIRTUAL_ENV
+    if [[ ! -d $VIRTUAL_ENV ]]; then
+        log_status "no venv found; creating $VIRTUAL_ENV"
+        "$python" -m venv "$VIRTUAL_ENV"
+    fi  
+    PATH_add "$VIRTUAL_ENV/bin"
+}
+```
+
+Install:
+
+    echo "eval \"$(direnv hook bash)\"" >> ~/.bashrc
+    echo "direnv hook fish | source" >> ~/.config/fish/config.fish
+
+### Usage
+
+Within a project, create `<python-project>/.envrc`:
+
+```bash
+export VIRTUAL_ENV=venv
+layout python-venv python3.7
+```
+
 ## Install pipenv
 
 **NOTE**: Consider using pipenv with/instead of virtualenvwrapper/virtualfish
@@ -33,9 +81,7 @@ Install auto-completions for fish:
     echo "eval (pipenv --completion)" >> ~/.config/fish/config.fish
 
 
-## Install virtualenvwrapper for the local user (Bash shell)
-
-NOTE: `python -m venv newvenvfolder`!
+## Optional: Install virtualenvwrapper for the local user (Bash shell)
 
 <https://virtualenvwrapper.readthedocs.org/en/latest/install.html>
 
@@ -50,7 +96,7 @@ Make the commands available
     source ~/.bashrc
 
 
-## Install virtualfish for the local user (Fish shell)
+## Optiona: Install virtualfish for the local user (Fish shell)
 
 (virtualenvwrapper for the fish shell)
 
@@ -61,6 +107,20 @@ Enable virtualfish:
     echo "eval (python -m virtualfish auto_activation projects)" >> ~/.config/fish/config.fish
 
 ## Bash shortcuts
+
+TODO: Fix up my dotfiles
+
+Fish
+
+    function rmpycache -d "Remove cached Python files"
+    find . -name \*.pyc -delete
+    find . -type d -name __pycache__ -delete
+endfunction rmpycache -d "Remove cached Python files"
+        find . -name \*.pyc -delete
+        find . -type d -name __pycache__ -delete
+    end
+
+Bash
 
     echo "alias rmpycache='find . -name \*.pyc -delete && find . -type d -name __pycache__ -delete'" >> ~/.bash_aliases
     source ~/.bashrc
