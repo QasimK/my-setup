@@ -1,6 +1,6 @@
 # My Sublime Text 3
 
-Install:
+Install on Ubuntu:
 
 	sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt update && sudo apt install sublime-text-installer
 
@@ -84,15 +84,14 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 **General**
 
-- EditorConfig
+- [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon)
+- [EditorConfig](https://packagecontrol.io/packages/EditorConfig)
   - See console for currently active config
-- EditorConfigSnippets
-- Git
-- BracketHighlighter
+- [EditorConfigSnippets](https://packagecontrol.io/packages/EditorConfigSnippets)
+- [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter)
 - Indent XML (Ctrl-K,F) (Also does JSON)
 - ColorPicker (Ctrl-Shift-C)
 - Color Highlighter
-- A File Icon
 - Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
 - TOML reddit
 
@@ -132,7 +131,61 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 	// -> config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda'
         // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
 	// "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/test/code/<project>,/vagrant"
-	}
+	}93
+
+- ColorPicker (Ctrl-Shift-C)
+
+94
+
+- Color Highlighter
+
+95
+
+- Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
+
+96
+
+- TOML reddit
+
+97
+
+​
+
+98
+
+**Vintage**
+
+99
+
+​
+
+100
+
+- Enable in the config above
+
+101
+
+- In Sublime package settings `~/.config/sublime-text-3/Vintage/Preferences.sublime-settings`:
+
+102
+
+​
+
+103
+
+```
+
+104
+
+{
+
+105
+
+    "vintage_use_clipboard": true
+
+106
+
+}
     }
 ```
 - Djaneiro
