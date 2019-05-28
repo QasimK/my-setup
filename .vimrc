@@ -1,7 +1,7 @@
 " <Ctrl-P> to toggle between copy-and-paste that Just Works (TM)
 " OR: use gvim
-nnoremap <Ctrl-P> :set invpaste paste?<CR>
-set pastetoggle=<Ctrl-P>
+nnoremap <C-P> :set invpaste paste?<CR>
+set pastetoggle=<C-P>
 
 " <Ctrl-L> to switch line numbers on/off (order  systems which ignore permissions for UNIX domain sockets. Portable programs should not rely on this feature for security.matters)
 noremap <C-L> :set relativenumber! number!<CR>
