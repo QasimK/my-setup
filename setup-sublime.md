@@ -32,8 +32,9 @@ Install on Ubuntu:
         ".git",
         ".cache",
         "__pycache__",
-	".idea",
-	".sass-cache"20px
+        ".idea",
+	    ".sass-cache",
+		".pytest_cache"
     ],
     "font_face": "Fira Code",
     "font_size": 11,
@@ -121,73 +122,48 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
     "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
 }
 ```
+
     - **Per project setup** - Edit Project:
+
 ```
     "settings":
     {
-        "pep8_max_line_length": 100
+        "pep8_max_line_length": 88
         // "pep8_ignore": []
         // Set up Vagrantfile: shared port, shared folder:
-	// -> config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda'
+        // -> config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda'
         // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
-	// "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/test/code/<project>,/vagrant"
-	}93
+        // "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/test/code/<project>,/vagrant"
+	}
+```
 
-- ColorPicker (Ctrl-Shift-C)
-
-94
-
-- Color Highlighter
-
-95
-
-- Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
-
-96
-
-- TOML reddit
-
-97
-
-​
-
-98
+- [sublack](https://packagecontrol.io/packages/sublack)
+    - Install user-local Black package: `pipx install black[d]`
+    - **Package settings**
+```
+{
+	"black_command": "/home/test/.local/bin/black",
+	"black_blackd_autostart": true,
+	"black_use_blackd": true
+}
+```
+    - **Project settings**:
+```
+    "sublack.black_on_save": true
+```
 
 **Vintage**
 
-99
-
-​
-
-100
-
 - Enable in the config above
-
-101
 
 - In Sublime package settings `~/.config/sublime-text-3/Vintage/Preferences.sublime-settings`:
 
-102
-
-​
-
-103
-
 ```
-
-104
-
 {
-
-105
-
     "vintage_use_clipboard": true
-
-106
-
 }
-    }
 ```
+
 - Djaneiro
 
 **Web**
