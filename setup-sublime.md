@@ -33,8 +33,8 @@ Install on Ubuntu:
         ".cache",
         "__pycache__",
         ".idea",
-	    ".sass-cache",
-		".pytest_cache"
+        ".sass-cache",
+        ".pytest_cache"
     ],
     "font_face": "Fira Code",
     "font_size": 11,
