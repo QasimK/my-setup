@@ -116,54 +116,69 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
     - `ctrl-alt-r` auto-pep8
     - Rename object under cursor (command search/right-click)
     - McCabe code complexity (command search/right-click)
+    - **Cross-Project setup** `Preferences > Package Settings > Anaconda > Settings - User`
+        ```
+        {
+            "anaconda_linter_phantoms": true,
+            "anaconda_linter_persistent": true,
+            "anaconda_linting_behaviour": "load-save",  // TODO: Check out atomic save above problems??
+            "auto_python_builder_enabled": false,  // Not used by me; can cause problems
+            "validate_imports": true,
+            "suppress_word_completions": true,  // Ignore Sublime's auto-complete
+            "suppress_explicit_completions": true,  // Ignore Sublime's auto-complete
+            "pep8_ignore": ["E241", "E242", "W503"],
+        }
+        ```
     - **Per project setup** - create a `.anaconda file` in project root
-```
-{
-    "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
-}
-```
-
+        ```
+        {
+            "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
+        }
+        ```
     - **Per project setup** - Edit Project:
-
-```
-    "settings":
-    {
-        "pep8_max_line_length": 88
-        // "pep8_ignore": []
-        // Set up Vagrantfile: shared port, shared folder:
-        // -> config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda'
-        // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
-        // "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/test/code/<project>,/vagrant"
-	}
-```
+        ```
+            "settings":
+            {
+                "pep8_max_line_length": 88
+                // "pep8_ignore": []
+                // Set up Vagrantfile: shared port, shared folder:
+                // -> config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda'
+                // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
+                // "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/test/code/<project>,/vagrant"
+            }
+        ```
+ 
+    - **Key Maps** - `Preferences > Browse Packages > User (Folder) > Python.sublime-settings`
+        ```
+        {
+            "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}]
+        }
+        ```
 
 - [sublack](https://packagecontrol.io/packages/sublack)
     - Install user-local Black package: `pipx install black[d]`
     - **Package settings**
-```
-{
-	"black_command": "/home/test/.local/bin/black",
-	"black_blackd_autostart": true,
-	"black_use_blackd": true
-}
-```
+        ```
+        {
+            "black_command": "/home/test/.local/bin/black",
+            "black_blackd_autostart": true,
+            "black_use_blackd": true
+        }
+        ```
     - **Project settings**:
-```
-    "sublack.black_on_save": true
-```
+        ```
+            "sublack.black_on_save": true
+        ```
 
 **Vintage**
 
 - Enable in the config above
-
 - In Sublime package settings `~/.config/sublime-text-3/Vintage/Preferences.sublime-settings`:
-
-```
-{
-    "vintage_use_clipboard": true
-}
-```
-
+    ```
+    {
+        "vintage_use_clipboard": true
+    }
+    ```
 - Djaneiro
 
 **Web**
@@ -179,16 +194,16 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 **Rust**
 
 - RustEnhanced
-  - Build features (ctrl+b), test features, *inline syntax highlight*
-  - Be sure to disable the `Rust` package and to have `rustc` and `cargo` available on cmd
+    - Build features (ctrl+b), test features, *inline syntax highlight*
+    - Be sure to disable the `Rust` package and to have `rustc` and `cargo` available on cmd
 - RustAutoComplete
-  - What it says on the tin.
-  - Install and test [Racer](https://github.com/phildawes/racer)
-  - *Goto Definition: F2*
+    - What it says on the tin.
+    - Install and test [Racer](https://github.com/phildawes/racer)
+    - *Goto Definition: F2*
 - BeautifyRust
-  - Autoformat on save
-  - Install [Rustfmt](https://github.com/rust-lang-nursery/rustfmt) `cargo install rustfmt`
-  - Set the package settings:
+    - Autoformat on save
+    - Install [Rustfmt](https://github.com/rust-lang-nursery/rustfmt) `cargo install rustfmt`
+    - Set the package settings:
 ```
 {
   "run_on_save": true,
@@ -199,28 +214,3 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 **Maybe**
 
 - SublimeLinter - Used for other linters
-
-### Sublime Anaconda setup
-
-- Set Up Anaconda settings `Preferences > Package Settings > Anaconda > Settings - User`
-
-```
-{
-    "anaconda_linter_phantoms": true,
-    "anaconda_linter_persistent": true,
-    "anaconda_linting_behaviour": "load-save",  // TODO: Check out atomic save above problems??
-    "auto_python_builder_enabled": false,  // Not used by me; can cause problems
-    "validate_imports": true,
-    "suppress_word_completions": true,  // Ignore Sublime's auto-complete
-    "suppress_explicit_completions": true,  // Ignore Sublime's auto-complete
-    "pep8_ignore": ["E241", "E242", "W503"],
-}
-```
-
-- Set up keymaps `Preferences > Browse Packages > User (Folder) > Python.sublime-settings`
-
-```
-{
-    "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}]
-}
-```
