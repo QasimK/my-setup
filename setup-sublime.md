@@ -109,6 +109,7 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 **Python**
 
+- Djaneiro
 - Anaconda - Like flake8 (pycodestyle PEP8; PEP257 (TODO: Enable?); PyFlakes; McCabe)
     - `ctrl-alt-g` goto definition
     - `ctrl-alt-f` find usages
@@ -179,7 +180,6 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
         "vintage_use_clipboard": true
     }
     ```
-- Djaneiro
 
 **Web**
 
@@ -204,12 +204,12 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
     - Autoformat on save
     - Install [Rustfmt](https://github.com/rust-lang-nursery/rustfmt) `cargo install rustfmt`
     - Set the package settings:
-```
-{
-  "run_on_save": true,
-  "show_errors": false,  // Annoying warning with e.g. syntax errors
-}
-```
+        ```
+        {
+          "run_on_save": true,
+          "show_errors": false,  // Annoying warning with e.g. syntax errors
+        }
+        ```
 
 **Maybe**
 
