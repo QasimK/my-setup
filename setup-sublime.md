@@ -20,7 +20,8 @@ Install on Ubuntu:
                 // Vagrant
                 // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
                 // Generic
-                // "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/qasim/Projects/<project>,/project"
+                // "python_interpreter": "tcp://172.16.3.2:19361?
+    received_at = Column(DateTime, nullablepathmap=/home/qasim/Projects/<project>,/project"
             }
         }
         ```
