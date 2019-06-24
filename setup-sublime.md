@@ -2,10 +2,60 @@
 
 Install on Ubuntu:
 
-	sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt update && sudo apt install sublime-text-installer
+    sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt update && sudo apt install sublime-text-installer
 
 
-## Settings
+## Per-Project Settings
+
+### Python
+
+- **Anaconda**:
+    - **Project settings** Project > Edit Project:
+        ```
+        {
+            "settings":
+            {
+                "pep8_max_line_length": 88
+                // "pep8_ignore": []
+                // Vagrant
+                // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
+                // Generic
+                // "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/qasim/Projects/<project>,/project"
+            }
+        }
+        ```
+    - Alternatively specify interpreter with a `.anaconda` file in the project root:
+        ```
+        {
+            "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
+        }
+        ```
+
+    - VM/Container Bash Function:
+        ```
+        function minserver {
+            pkill -e -f /anaconda/anaconda_server/minserver.py;
+            (nohup /PROJECT/venv/bin/python -B /anaconda/anaconda_server/minserver.py -p PROJECT -e /PROJECT/prix-core 19361 > /dev/null &);
+        }
+
+    - Mount Anaconda Folder:
+        ```
+        config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda', type: 'nfs'
+        ```
+
+- **sublack**:
+    - **Project settings** Project > Edit Project:
+        ```
+        {
+            "settings":
+            {
+                "sublack.black_on_save": true
+            }
+        }
+        ```
+
+
+## One-Time Settings
 
 ```
 {
@@ -60,7 +110,7 @@ Install on Ubuntu:
 }
 ```
 
-## Keymaps
+### Keymaps
 
 Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
@@ -79,7 +129,24 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 ]
 ```
 
-## Packages
+### Snippets
+
+Tools > Developer > New Snippet > "ipdb.sublime-snippet"
+
+```
+<snippet>
+  <description>ipdb.set_trace()</description>
+  <content><![CDATA[
+__import__("ipdb").set_trace()  # FIXME
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ipdb</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python, keyword.control.import.python</scope>
+</snippet>
+```
+
+### Packages
 
 [Package Control](https://packagecontrol.io/installation):
 
@@ -130,25 +197,6 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
             "pep8_ignore": ["E241", "E242", "W503"],
         }
         ```
-    - **Per project setup** - create a `.anaconda file` in project root
-        ```
-        {
-            "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
-        }
-        ```
-    - **Per project setup** - Edit Project:
-        ```
-            "settings":
-            {
-                "pep8_max_line_length": 88
-                // "pep8_ignore": []
-                // Set up Vagrantfile: shared port, shared folder:
-                // -> config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda'
-                // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
-                // "python_interpreter": "tcp://172.16.3.2:19361?manual=1&pathmap=/home/test/code/<project>,/vagrant"
-            }
-        ```
- 
     - **Key Maps** - `Preferences > Browse Packages > User (Folder) > Python.sublime-settings`
         ```
         {
@@ -165,10 +213,6 @@ Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
             "black_blackd_autostart": true,
             "black_use_blackd": true
         }
-        ```
-    - **Project settings**:
-        ```
-            "sublack.black_on_save": true
         ```
 
 **Vintage**
