@@ -70,10 +70,11 @@ Install on Ubuntu:
     "auto_find_in_selection": true,
     "binary_file_patterns":
     [
+        "venv/*",
         "node_modules/*",
-        ".codeintel/*",
         ".tox/*",
-        "htmlcov/*"
+        "htmlcov/*",
+        ".codeintel/*"
     ],
     "dictionary": "Packages/Language - English/en_GB.dic",
     // "dpi_scale": 2,
@@ -82,9 +83,10 @@ Install on Ubuntu:
         ".git",
         ".cache",
         "__pycache__",
-        ".idea",
-        ".sass-cache",
         ".pytest_cache"
+        ".sass-cache",
+        ".idea",
+        ".allure"
     ],
     "font_face": "Fira Code",
     "font_size": 11,
