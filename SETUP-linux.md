@@ -8,6 +8,19 @@ Install mosh, tmux, fish, vim, git, htop, direnv.
     chmod +x gogo.sh
     ./gogo.sh
 
+## Better Bash History
+
+    export HISTFILE=<SHARED_FILE_LOCATION>
+    export HISTFILESIZE=99999
+    export HISTSIZE=99999
+    export HISTCONTROL=ignoreboth:erasedups
+    export HISTIGNORE="ls:exit:[bf]g:jobs:history:history -n"
+    export HISTTIMEFORMAT='%Y-%m-%d %H:%M.%S | '
+    shopt -s histappend
+    shopt -s cmdhist
+    shopt -s histverify
+    PROMPT_COMMAND="history -a; ${PROMPT_COMMAND:-:}"
+
 
 ## Install PIP for the local user
 <https://pip.pypa.io/en/stable/installing/> (**We install pip for Python 3.**)
