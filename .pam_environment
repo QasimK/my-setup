@@ -1,3 +1,4 @@
 VISUAL=/usr/bin/vim
 # Smooth-scrolling in Firefox with X
 MOZ_USE_XINPUT2=1
+GIT_CEILING_DIRECTORIES DEFAULT=@{HOME}
