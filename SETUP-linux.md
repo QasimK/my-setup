@@ -113,12 +113,9 @@ TODO: Fix up my dotfiles
 Fish
 
     function rmpycache -d "Remove cached Python files"
-    find . -name \*.pyc -delete
+    find . -type f -name \*.pyc -delete
     find . -type d -name __pycache__ -delete
-endfunction rmpycache -d "Remove cached Python files"
-        find . -name \*.pyc -delete
-        find . -type d -name __pycache__ -delete
-    end
+end
 
 Bash
 
