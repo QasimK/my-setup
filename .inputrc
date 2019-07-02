@@ -1,9 +1,0 @@
-# Include system defaults
-$include /etc/inputrc
-
-# Case-insensitive auto-completion
-set completion-ignore-case On
-# Don't make audio noise when auto-complete fails
-set bell-style visible
-# Safe paste https://cirw.in/blog/bracketed-paste
-set enable-bracketed-paste on
