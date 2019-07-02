@@ -1,25 +1,7 @@
 # Setup Linux for Development
 
-Install mosh, tmux, fish, vim, git, htop, direnv.
-
-## Setup dotfiles
-
-    wget https://raw.githubusercontent.com/QasimK/my-setup/master/gogo.sh
-    chmod +x gogo.sh
-    ./gogo.sh
-
-## Better Bash History
-
-    export HISTFILE=<SHARED_FILE_LOCATION>
-    export HISTFILESIZE=99999
-    export HISTSIZE=99999
-    export HISTCONTROL=ignoreboth:erasedups
-    export HISTIGNORE="ls:exit:[bf]g:jobs:history:history -n"
-    export HISTTIMEFORMAT='%Y-%m-%d %H:%M.%S | '
-    shopt -s histappend
-    shopt -s cmdhist
-    shopt -s histverify
-    PROMPT_COMMAND="history -a; ${PROMPT_COMMAND:-:}"
+* Install mosh, tmux, fish, vim, git, htop, direnv.
+* Setup common dotfiles: <https://github.com/QasimK/dotfiles>.
 
 
 ## Install PIP for the local user
