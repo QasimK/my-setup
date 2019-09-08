@@ -76,7 +76,7 @@ Install on Ubuntu:
         "htmlcov/*",
         ".codeintel/*"
     ],
-    "dictionary": "Packages/Language - English/en_GB.dic",
+	"dictionary": "Packages/User/English (British).dic",
     // "dpi_scale": 2,
     "folder_exclude_patterns":
     [
@@ -111,6 +111,8 @@ Install on Ubuntu:
     "tab_completion": false,
 }
 ```
+
+Download the three dictionary files from <https://github.com/titoBouzout/Dictionaries/> and save it into Preferences > Browse Packages.
 
 ### Keymaps
 
