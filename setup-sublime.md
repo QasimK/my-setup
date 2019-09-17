@@ -15,9 +15,12 @@ Install on Ubuntu:
         {
             "settings":
             {
-                "pep8_max_line_length": 88
+	    	// Disable pycodestyle when using sublack (Black)
+		"pep8": false
+                // "pep8_max_line_length": 88
                 // "pep8_ignore": []
                 // Vagrant
+                // "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
                 // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
                 // Generic
                 // "python_interpreter": "tcp://172.16.3.2:19361?pathmap=/home/qasim/Projects/<project>,/project"
