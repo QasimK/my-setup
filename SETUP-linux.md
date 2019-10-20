@@ -1,8 +1,8 @@
 # Setup Linux for Development
 
-* Install mosh, tmux, fish, vim, git, htop, direnv.
 * Setup common dotfiles: <https://github.com/QasimK/dotfiles>.
-
+* Install mosh, tmux, fish, vim, git, htop.
+* Install aur:direnv
 
 ## Install PIP for the local user
 <https://pip.pypa.io/en/stable/installing/> (**We install pip for Python 3.**)
@@ -14,7 +14,7 @@
     # Fish
     set -U fish_user_paths ~/.local/bin $fish_user_paths
 
-## Install direnv
+## Configure direnv
 
 direnv is preferred over using `virtualenv` and `virtualenvwrapper`
 
@@ -62,7 +62,9 @@ export VIRTUAL_ENV=venv
 layout python-venv python3.7
 ```
 
-## Install pipenv
+## Install pipenv (if necessary)
+
+**NOTE**: Use Poetry or direnv instead.
 
 **NOTE**: Consider using pipenv with/instead of virtualenvwrapper/virtualfish
 
