@@ -207,12 +207,14 @@ __import__("ipdb").set_trace()  # FIXME
         {
             "anaconda_linter_phantoms": true,
             "anaconda_linter_persistent": true,
-            "anaconda_linting_behaviour": "load-save",  // TODO: Check out atomic save above problems??
+            "anaconda_linting_behaviour": "save-only",  // TODO: Check out atomic save above problems??
             "auto_python_builder_enabled": false,  // Not used by me; can cause problems
+	    "enable_signatures_tooltip": true,
+            "merge_signatures_and_doc": true,
             "validate_imports": true,
             "suppress_word_completions": true,  // Ignore Sublime's auto-complete
             "suppress_explicit_completions": true,  // Ignore Sublime's auto-complete
-            "pep8_ignore": ["E241", "E242", "W503"],
+            "pep8": false  // Disable pycodestyle in favour of Black
         }
         ```
     - **Key Maps** - `Preferences > Browse Packages > User (Folder) > Python.sublime-settings`
