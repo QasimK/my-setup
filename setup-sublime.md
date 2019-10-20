@@ -118,6 +118,8 @@ Download the three dictionary files from <https://github.com/titoBouzout/Diction
 
 Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
+Preferences > Key Bindings.
+
 ```
 [
     // Navigation with tab in auto-complete pop-up
