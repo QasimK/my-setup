@@ -1,9 +1,6 @@
 # My Sublime Text 3
 
-Install on Ubuntu:
-
-    sudo add-apt-repository ppa:webupd8team/sublime-text-3 && sudo apt update && sudo apt install sublime-text-installer
-
+Installation (add repository to package manager): <https://www.sublimetext.com/docs/3/linux_repositories.html>
 
 ## Per-Project Settings
 
