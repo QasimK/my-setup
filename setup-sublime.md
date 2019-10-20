@@ -116,8 +116,6 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
     "spell_check": true,
     // Disable auto-completion on pressing tab if there is no pop-up
     "tab_completion": false,
-    // Used by Terminal extension
-    "terminal": "termite",
 }
 ```
 
@@ -167,15 +165,20 @@ __import__("ipdb").set_trace()  # FIXME
 
 **General**
 
-- [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon)
+- [Theme - Monokai Pro](https://monokai.pro/)
 - [EditorConfig](https://packagecontrol.io/packages/EditorConfig)
   - See console for currently active config
 - [EditorConfigSnippets](https://packagecontrol.io/packages/EditorConfigSnippets)
 - [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter)
 - Indent XML (Ctrl-K,F) (Also does JSON)
-- ColorPicker (Ctrl-Shift-C)
 - Color Highlighter
 - Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
+    - **Package settings**
+        ```
+        {
+            "terminal": "/usr/bin/termite"
+        }
+        ```
 - TOML
 
 **Vintage**
@@ -191,7 +194,7 @@ __import__("ipdb").set_trace()  # FIXME
 
 **Python**
 
-- Djaneiro
+- (Djaneiro)
 - Anaconda - Like flake8 (pycodestyle PEP8; PEP257 (TODO: Enable?); PyFlakes; McCabe)
     - `ctrl-alt-g` goto definition
     - `ctrl-alt-f` find usages
