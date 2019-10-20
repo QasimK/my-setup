@@ -76,7 +76,7 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
         "htmlcov/*",
         ".codeintel/*"
     ],
-	"dictionary": "Packages/User/English (British).dic",
+    "dictionary": "Packages/User/English (British).dic",
     // "dpi_scale": 2,
     "folder_exclude_patterns":
     [
@@ -116,6 +116,8 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
     "spell_check": true,
     // Disable auto-completion on pressing tab if there is no pop-up
     "tab_completion": false,
+    // Used by Terminal extension
+    "terminal": "termite",
 }
 ```
 
@@ -174,7 +176,7 @@ __import__("ipdb").set_trace()  # FIXME
 - ColorPicker (Ctrl-Shift-C)
 - Color Highlighter
 - Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
-- TOML reddit
+- TOML
 
 **Vintage**
 
