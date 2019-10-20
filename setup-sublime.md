@@ -83,7 +83,7 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
         ".git",
         ".cache",
         "__pycache__",
-        ".pytest_cache"
+        ".pytest_cache",
         ".sass-cache",
         ".idea",
         ".allure"
