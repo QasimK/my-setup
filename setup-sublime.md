@@ -100,6 +100,13 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
         "draw_normal",
         "draw_active"
     ],
+    // Replaced by BracketHighlighter extension
+    "match_brackets": false,
+    "match_brackets_angle": false,
+    "match_brackets_braces": false,
+    "match_brackets_content": false,
+    "match_brackets_square": false,
+    "match_tags": false,
     "rulers":
     [
         80,
