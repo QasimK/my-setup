@@ -159,6 +159,34 @@ __import__("ipdb").set_trace()  # FIXME
 </snippet>
 ```
 
+Tools > Browse Packages > EditorConfigSnippets > editor-python-qasimk.sublime-snippet
+
+```
+<snippet>
+  <content><![CDATA[
+# .editorconfig project file
+# https://EditorConfig.org
+root = true
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 88
+
+[Makefile]
+indent_style = tab
+]]></content>
+  <tabTrigger>editor-python</tabTrigger>
+  <scope>source.ini.editorconfig</scope>
+</snippet>
+```
+
 ### Packages
 
 [Package Control](https://packagecontrol.io/installation):
