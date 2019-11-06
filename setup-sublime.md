@@ -234,7 +234,7 @@ indent_style = tab
         ```
         {
             "anaconda_linter_phantoms": true,
-            "anaconda_linter_persistent": true,
+            "anaconda_linter_persistent": false,  // Hide phantoms when typing
             "anaconda_linting_behaviour": "save-only",  // TODO: Check out atomic save above problems??
             "auto_python_builder_enabled": false,  // Not used by me; can cause problems
 	    "enable_signatures_tooltip": true,
