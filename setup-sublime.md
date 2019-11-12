@@ -12,12 +12,12 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
         {
             "settings":
             {
-	    	// Disable pycodestyle when using sublack (Black)
-		"pep8": false,
-		// Anaconda Python interpreter
+				// Anaconda Python interpreter
                 "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
+				// Disable pycodestyle when using sublack (Black)
+				"pep8": false,
 		
-		// If sublack is not used
+				// If sublack is not used
                 // "pep8_max_line_length": 88
                 // "pep8_ignore": []
 		
