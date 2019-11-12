@@ -13,21 +13,19 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
             "settings":
             {
 	    	// Disable pycodestyle when using sublack (Black)
-		"pep8": false
+		"pep8": false,
+		// Anaconda Python interpreter
+                "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
+		
+		// If sublack is not used
                 // "pep8_max_line_length": 88
                 // "pep8_ignore": []
-                // Vagrant
-                // "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
+		
+                // If Vagrant is used
                 // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
-                // Generic
+                // Vagrant (Generic)
                 // "python_interpreter": "tcp://172.16.3.2:19361?pathmap=/home/qasim/Projects/<project>,/project"
             }
-        }
-        ```
-    - Alternatively specify interpreter with a `.anaconda` file in the project root:
-        ```
-        {
-            "python_interpreter": "~/.virtualenvs/<venv>/bin/python"
         }
         ```
 
