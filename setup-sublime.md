@@ -88,6 +88,7 @@ Installation (add repository to package manager): <https://www.sublimetext.com/d
     ],
     "font_face": "Fira Code",
     "font_size": 11,
+    "font_options": ["ss03", "ss05", "ss20"],
     "ignored_packages":
     [
         "Rust",
