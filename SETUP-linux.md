@@ -81,6 +81,7 @@ Install auto-completions for fish:
 
 Set a passphrase for the new SSH key:recently
 
+    ssh-keygen -t ed25519 -C User@Device#Realm
     ssh-keygen -t rsa -b 4096 -C User@Device#Realm
 
 Copy the public key to the clipboard (e.g. to add to GitHub).
