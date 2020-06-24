@@ -158,7 +158,7 @@ __import__("ipdb").set_trace()  # FIXME
 </snippet>
 ```
 
-Tools > Browse Packages > EditorConfigSnippets > editor-python-qasimk.sublime-snippet
+Preferences > Browse Packages > EditorConfigSnippets > editor-python-qasimk.sublime-snippet
 
 ```
 <snippet>
