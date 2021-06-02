@@ -2,142 +2,171 @@
 
 Installation (add repository to package manager): <https://www.sublimetext.com/docs/3/linux_repositories.html>
 
+## Cheat-Sheet
+
+* `F12` - Go To Definition
+* `Ctrl+Alt+G` = Go To Definition (Anaconda)  (Note: **Mac OS** Super + Option)
+* `Ctrl+Alt+F` = Find Usages (Anaconda)
+* `Ctrl+Alt+D` = Show Docs (Anaconda)
+* Back Button / `Ctrl+-` = Go Back
+* `Ctrl+K,F` = Auto-format JSON or XML
+
 ## Per-Project Settings
 
 ### Python
 
-- **Anaconda**:
-    - **Project settings** Project > Edit Project:
-        ```
-        {
-            "settings":
-            {
-                // Anaconda Python interpreter
-                "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
-                // Disable pycodestyle when using sublack (Black)
-                "pep8": false,
-		
-                // If sublack is not used
-                // "pep8_max_line_length": 88
-                // "pep8_ignore": []
-		
-                // If Vagrant is used
-                // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
-                // Vagrant (Generic)
-                // "python_interpreter": "tcp://172.16.3.2:19361?pathmap=/home/qasim/Projects/<project>,/project"
-            }
-        }
-        ```
+#### Python (Anaconda, Sublack) 
 
-    - VM/Container Bash Function:
-        ```
+Project > Edit Project:
+
+    {
+        "settings":
+        {
+            // Anaconda Python interpreter
+            "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
+
+            // Disable pycodestyle when using Sublack
+            "pep8": false,
+            "sublack.black_on_save": true,
+
+            // If Sublack is not used
+            // "pep8_max_line_length": 88,
+            // "pep8_ignore": [],
+        }
+    }
+
+#### VM / Containers
+
+- VM/Container Bash Function:
+
         function minserver {
             pkill -e -f /anaconda/anaconda_server/minserver.py;
             (nohup /PROJECT/venv/bin/python -B /anaconda/anaconda_server/minserver.py -p PROJECT -e /PROJECT/prix-core 19361 > /dev/null &);
         }
 
-    - Mount Anaconda Folder:
-        ```
-        config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda', type: 'nfs'
-        ```
+- Vangrant - Mount Anaconda Folder:
 
-- **sublack**:
-    - **Project settings** Project > Edit Project:
-        ```
+        config.vm.synced_folder '~/.config/sublime-text-3/Packages/Anaconda', '/anaconda', type: 'nfs'
+
+- Sublime Project Settings
+
         {
             "settings":
             {
-                "sublack.black_on_save": true
+                // Vagrant
+                // "python_interpreter": "tcp://localhost:19360?network=forwarded&interpreter=~/.virtualenvs/<venv>/bin/python&shared=/anaconda&pathmap=/home/test/code/<project>,/vagrant/<project>"
+
+                // Vagrant (Generic)
+                // "python_interpreter": "tcp://172.16.3.2:19361?pathmap=/home/qasim/Projects/<project>,/project"
             }
         }
-        ```
 
 
 ## One-Time Settings
 
+### User Settings
+
 ```
 {
-    "added_words":
-    [
-        "virtualenv",
-        "fallback",
-        "datetime"
-    ],
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_cycle": true,
-    "auto_find_in_selection": true,
-    "binary_file_patterns":
-    [
-        "venv/*",
-        "node_modules/*",
-        ".tox/*",
-        "htmlcov/*",
-        ".codeintel/*"
-    ],
-    "dictionary": "Packages/User/English (British).dic",
-    // "dpi_scale": 2,
-    "folder_exclude_patterns":
-    [
-        ".git",
-        ".cache",
-        "__pycache__",
-        ".pytest_cache",
-        ".sass-cache",
-        ".idea",
-        ".allure"
-    ],
-    "font_face": "Fira Code",
-    "font_size": 11,
-    "font_options": ["ss03", "ss05", "ss20"],
-    "ignored_packages":
-    [
-        "Rust",
-        "Vintage"
-    ],
-    "indent_guide_options":
-    [
-        "draw_normal",
-        "draw_active"
-    ],
-    // Replaced by BracketHighlighter extension
-    "match_brackets": false,
-    "match_brackets_angle": false,
-    "match_brackets_braces": false,
-    "match_brackets_content": false,
-    "match_brackets_square": false,
-    "match_tags": false,
-    "rulers":
-    [
-        80,
-        100
-    ],
-    "shift_tab_unindent": true,
-    "spell_check": true,
-    // Disable auto-completion on pressing tab if there is no pop-up
-    "tab_completion": false,
+	"added_words":
+	[
+		"virtualenv",
+		"fallback",
+		"datetime",
+		"blockchain"
+	],
+	"always_show_minimap_viewport": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_cycle": true,
+	"auto_find_in_selection": true,
+	"binary_file_patterns":
+	[
+		".codeintel/*",
+		"htmlcov/*",
+		"node_modules/*",
+		".tox/*",
+		"venv/*",
+		".virtualenv/*",
+	],
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"folder_exclude_patterns":
+	[
+		".allure",
+		".cache",
+		".git",
+		".idea",
+		".mypy_cache",
+		".pytest_cache",
+		"__pycache__",
+		".sass-cache",
+	],
+	"font_face": "Fira Code",
+	"font_tab_style": "square",
+	"font_options":
+	[
+		"ss03",
+		"ss05",
+		"ss20"
+	],
+	"font_size": 13,
+	"git_diff_target": "head",
+	"hide_tab_scrolling_buttons": true,
+	"hide_new_tab_button": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Rust",
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active_single",
+	],
+	"rulers":
+	[
+		80,
+		88,
+		100,
+	],
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"show_project_first": true,
+	"show_rel_path": true,
+	"show_sidebar_button": false,
+	"scroll_past_end": true,
+	"scroll_context_lines": 3,
+	"spell_check": true,
+	"tab_completion": false,
+	"theme": "Default.sublime-theme",
 }
 ```
 
-Download the three dictionary files from <https://github.com/titoBouzout/Dictionaries/> and save it into Preferences > Browse Packages.
-
 ### Keymaps
-
-Auto-complete using `\` to go down, and `Shift-\` to go up (and tab to select).
 
 Preferences > Key Bindings.
 
 ```
 [
-    // Navigation with tab in auto-complete pop-up
-    { "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "auto_complete_visible" }] },
-    { "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "auto_complete_visible" }] },
+    // Fix terminal key binding conflict
+    { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+    { "keys": ["alt+shift+t"], "command": "open_terminal" },
+    { "keys": ["ctrl+alt+shift+t"], "command": "open_terminal_project_folder" },
 
-    // Navigation with tab in overlay
-    { "keys": ["\\"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] },
-    { "keys": ["|"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [{ "key": "overlay_visible", "operator": "equal", "operand": true } ] },
-
-    // ctrl+space shows tab completion pop-up
+    // Show tab completion pop-up with ctrl + space
     { "keys": ["ctrl+space"], "command": "auto_complete" },
+]
+```
+
+**Mac OS** override:
+
+```
+[
+    // Fix terminal key binding conflict
+    { "keys": ["super+shift+t"], "command": "reopen_last_file" },
+    { "keys": ["ctrl+shift+t"], "command": "open_terminal" },
+    { "keys": ["ctrl+alt+shift+t"], "command": "open_terminal_project_folder" },
 ]
 ```
 
@@ -188,18 +217,16 @@ indent_style = tab
 
 ### Packages
 
-[Package Control](https://packagecontrol.io/installation):
+[Package Control](https://packagecontrol.io/installation)
 
-**General**
+#### General
 
-- [Theme - Monokai Pro](https://monokai.pro/)
+- [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon)
+- Color Highlighter
 - [EditorConfig](https://packagecontrol.io/packages/EditorConfig)
   - See console for currently active config
-- [EditorConfigSnippets](https://packagecontrol.io/packages/EditorConfigSnippets)
-- [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter)
 - Indent XML (Ctrl-K,F) (Also does JSON)
-- Color Highlighter
-- Terminal (Ctrl-Shift-T, or Ctrl-Shift-Alt-T)
+- Terminal (Alt-Shift-T, or Ctrl-Shift-Alt-T)
     - **Package settings**
         ```
         {
@@ -208,16 +235,19 @@ indent_style = tab
         ```
 - TOML
 
-**Vintage**
+##### Company
 
-- Enable in the config above
-- In Sublime package settings `~/.config/sublime-text-3/Vintage/Preferences.sublime-settings`:
+- Git
+- GitLink
 
-```
-{
-    "vintage_use_clipboard": true
-}
-```
+#### Vintage
+
+1. Enable the package
+2. In Sublime package settings `~/.config/sublime-text-3/Vintage/Preferences.sublime-settings`:
+
+        {
+            "vintage_use_clipboard": true
+        }
 
 **Python**
 
@@ -230,26 +260,20 @@ indent_style = tab
     - Rename object under cursor (command search/right-click)
     - McCabe code complexity (command search/right-click)
     - **Cross-Project setup** `Preferences > Package Settings > Anaconda > Settings - User`
-        ```
-        {
-            "anaconda_linter_phantoms": true,
-            "anaconda_linter_persistent": false,  // Hide phantoms when typing
-            "anaconda_linting_behaviour": "save-only",  // TODO: Check out atomic save above problems??
-            "auto_python_builder_enabled": false,  // Not used by me; can cause problems
-	    "enable_signatures_tooltip": true,
-            "merge_signatures_and_doc": true,
-            "validate_imports": true,
-            "suppress_word_completions": true,  // Ignore Sublime's auto-complete
-            "suppress_explicit_completions": true,  // Ignore Sublime's auto-complete
-            "pep8": false  // Disable pycodestyle in favour of Black
-        }
-        ```
+
+            {
+                "auto_python_builder_enabled": false,  // Not used by me; can cause problems
+                "pep8": false,  // Disable pycodestyle in favour of Sublack
+                "suppress_word_completions": true,  // Ignore Sublime's auto-complete
+                "suppress_explicit_completions": true,  // Ignore Sublime's auto-complete    
+                "validate_imports": true,
+            }
+
     - **Key Maps** - `Preferences > Browse Packages > User (Folder) > Python.sublime-settings`
-        ```
-        {
-            "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}]
-        }
-        ```
+
+            {
+                "auto_complete_triggers": [{"selector": "source.python - string - comment - constant.numeric", "characters": "."}]
+            }
 
 - [sublack](https://packagecontrol.io/packages/sublack)
     - Install user-local Black package: `pipx install black[d]`
@@ -285,22 +309,27 @@ indent_style = tab
 **Rust**
 
 - RustEnhanced
+    - More up-to-date version of Sublime's `Rust` package
     - Build features (ctrl+b), test features, *inline syntax highlight*
     - Be sure to disable the `Rust` package and to have `rustc` and `cargo` available on cmd
-- RustAutoComplete
-    - What it says on the tin.
-    - Install and test [Racer](https://github.com/phildawes/racer)
-    - *Goto Definition: F2*
-- BeautifyRust
-    - Autoformat on save
-    - Install [Rustfmt](https://github.com/rust-lang-nursery/rustfmt) `cargo install rustfmt`
-    - Set the package settings:
-        ```
-        {
-          "run_on_save": true,
-          "show_errors": false,  // Annoying warning with e.g. syntax errors
-        }
-        ```
+
+            {
+                "rust_env": {"PATH": "$PATH:$HOME/.cargo/bin"},
+	            "rust_gutter_style": "circle",
+                "rust_phantom_style": "popup",
+            }
+
+- TODO: rust-analyser
+- [RustFmt](https://packagecontrol.io/packages/RustFmt)
+    - Auto-format on save
+    - `cargo install rustfmt`
+    - Preferences > Package Settings > RustFmt > Settings:
+
+            {
+                // Must be an absolute path, i.e. `type rustfmt`
+                "executable": "/home/qasim/.cargo/bin/rustfmt",
+                "error_messages": false,
+            }
 
 **Maybe**
 
