@@ -125,9 +125,9 @@ Project > Edit Project:
 	],
 	"rulers":
 	[
-		80,
+		79,
 		88,
-		100,
+		99,
 	],
 	"shift_tab_unindent": true,
 	"show_encoding": true,
