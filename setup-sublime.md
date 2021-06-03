@@ -89,6 +89,7 @@ Project > Edit Project:
 		".virtualenv/*",
 	],
 	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"control_character_style": "name",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"folder_exclude_patterns":
 	[
