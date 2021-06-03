@@ -24,12 +24,10 @@ Project > Edit Project:
         {
             // Anaconda Python interpreter
             "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
-
-            // Disable pycodestyle when using Sublack
-            "pep8": false,
             "sublack.black_on_save": true,
 
             // If Sublack is not used
+	    // "pep8": true,
             // "pep8_max_line_length": 88,
             // "pep8_ignore": [],
         }
