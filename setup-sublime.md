@@ -174,6 +174,19 @@ Preferences > Key Bindings.
 ]
 ```
 
+### Mouse Maps
+
+**Mac OS**
+
+Preferences > Browse Packages > User > `Default (OSX).sublime-mousemap`:
+
+```
+[
+    { "button": "button4", "command": "jump_back" },
+    { "button": "button5", "command": "jump_forward" },
+]
+```
+
 ### Snippets
 
 Tools > Developer > New Snippet > "ipdb.sublime-snippet"
