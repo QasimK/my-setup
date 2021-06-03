@@ -24,6 +24,7 @@ Project > Edit Project:
         {
             // Anaconda Python interpreter
             "python_interpreter": "~/.cache/pypoetry/virtualenvs/project-py3.7/bin/python",
+            "sublack.black_blackd_autostart": true,
             "sublack.black_on_save": true,
 
             // If Sublack is not used
@@ -296,7 +297,6 @@ indent_style = tab
         ```
         {
             "black_command": "/home/test/.local/bin/black",
-            "black_blackd_autostart": true,
             "black_use_blackd": true
         }
         ```
