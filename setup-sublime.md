@@ -141,6 +141,9 @@ Project > Edit Project:
 	"spell_check": true,
 	"tab_completion": false,
 	"theme": "Default.sublime-theme",
+	
+	// Mac only
+	"native_tabs": "disabled",
 }
 ```
 
