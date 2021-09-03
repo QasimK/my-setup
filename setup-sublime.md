@@ -152,13 +152,13 @@ Preferences > Key Bindings.
 
 ```
 [
-    // Fix terminal key binding conflict
+    // Fix terminal plugin key binding conflict
     { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
     { "keys": ["alt+shift+t"], "command": "open_terminal" },
     { "keys": ["ctrl+alt+shift+t"], "command": "open_terminal_project_folder" },
 
-    // Show tab completion pop-up with ctrl + space
-    { "keys": ["ctrl+space"], "command": "auto_complete" },
+    // Show tab completion pop-up with ctrl + space (not needed)?
+    // { "keys": ["ctrl+space"], "command": "auto_complete" },
 ]
 ```
 
@@ -203,7 +203,7 @@ __import__("ipdb").set_trace()  # FIXME
 </snippet>
 ```
 
-Preferences > Browse Packages > EditorConfigSnippets > editor-python-qasimk.sublime-snippet
+Tools > Developer > New Snippet > "editorconfig-custom.sublime-snippet"
 
 ```
 <snippet>
@@ -226,7 +226,7 @@ max_line_length = 88
 [Makefile]
 indent_style = tab
 ]]></content>
-  <tabTrigger>editor-python</tabTrigger>
+  <tabTrigger>editorconfig-custom</tabTrigger>
   <scope>source.ini.editorconfig</scope>
 </snippet>
 ```
