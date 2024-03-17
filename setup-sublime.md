@@ -110,7 +110,7 @@ Project settings:
  			"LSP-ruff": {
  				"initializationOptions": {
  					"settings": {
- 						"path": ["${workspaceFolder}/.venv/bin/ruff"],
+ 						"path": [".venv/bin/ruff"],
  					}
  				}
  			}
